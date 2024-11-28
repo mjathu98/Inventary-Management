@@ -5,15 +5,17 @@ public class Product
     public int Id { get; set; }
 
     [Required]
-    [MaxLength(100)]
+    [StringLength(100, MinimumLength = 3)]
     public string Name { get; set; }
 
-    [MaxLength(250)]
+    [StringLength(500)]
     public string Description { get; set; }
 
-    [Required]
     public int CategoryId { get; set; }
 
-    [MaxLength(255)]
-    public string ThumbnailImage { get; set; }
+    public Category Category { get; set; }
+
+    public ICollection<ProductStock> ProductStocks { get; set; }
+
+    public ICollection<ProductPrice> ProductPrices { get; set; }
 }
