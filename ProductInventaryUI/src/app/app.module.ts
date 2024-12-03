@@ -11,6 +11,8 @@ import { ProductAddComponent } from './pages/products/product-add/product-add.co
 import { ProductFormComponent } from './pages/products/product-form/product-form.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { CategoriesComponent } from './pages/categories/categories/categories.component';
+import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CategoriesComponent } from './pages/categories/categories/categories.co
     ProductAddComponent,
     ProductFormComponent,
     LoginComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    MainLayoutComponent,
+    AuthLayoutComponent
   ],
   imports: [
     BrowserModule,
