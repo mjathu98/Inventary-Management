@@ -13,6 +13,7 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { CategoriesComponent } from './pages/categories/categories/categories.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { InvoiceComponent } from './pages/invoices/invoice/invoice.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
     LoginComponent,
     CategoriesComponent,
     MainLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,
