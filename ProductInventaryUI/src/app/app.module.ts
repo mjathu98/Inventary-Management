@@ -1,20 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProductListComponent } from './pages/products/product-list/product-list.component';
+import { ProductAddComponent } from './pages/products/product-add/product-add.component';
+import { ProductFormComponent } from './pages/products/product-form/product-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
-    FooterComponent
+    FooterComponent,
+    ProductListComponent,
+    ProductAddComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

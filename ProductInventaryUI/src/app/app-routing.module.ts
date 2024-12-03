@@ -4,7 +4,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
 
 const routes: Routes = [
   {
-    path:"",component:TopNavComponent
+    path: "", component: TopNavComponent
   }
 ];
 
